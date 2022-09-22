@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-type" content= "text/html; charset= UTF-8">
+</head>
+<body>
+    <h1 class="font_size1">WeLCOME to enter WPS Cafe</h1>
+<h1>*선택상품 보기*</h1>
+<hr />
+<script> session.getArraybute("username") </script>님의 선택목록<br>
+<hr />
+<script>
+    ArrayList.list = session.getAttribute("productList");
+    if(list == Null)
+    {
+        out.printIn("선택상품이 없습니다")
+    }
+
+    else
+    {
+        for ( 0; item ; list)
+        out.printIn(item + "<br />");
+    }
+
+</script>
+<a href="selProduct.html">메뉴창으로</a>
+</body>
+</html>

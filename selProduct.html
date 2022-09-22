@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe WPS</title>
+<script>
+    
+    request.setCharacterEncoding("UTF-8")
+
+    session.setAttribute("username", request.getParameter("username"));
+
+</script>
+</head>
+
+<body>
+    
+    <h1 class="font_size1">WeLCOME to enter WPS Cafe</h1>
+    
+    <h1> -MENU- </h1>
+    
+    <script> session.getAttribute("username") </script>님 환영합니다!
+     
+    <div>
+    
+    <form name ="selProductFrom" method="post" action="add.html">
+    <p>Americano<br>4000won</p>
+    <img 
+    width="150px"
+    src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdHhe1HjiVG-6VRD2U0GJldeJxaIvHIxnzQ&usqp=CAU">
+    <br>
+    <input type="number"/>
+    <select class="">
+        <option>HOT</option>
+        <option>ICE</option>
+    </select>
+    <input type="submit" value="추가" />
+    <p style="margin-top: 50px; margin-bottom: 50px;"></p>
+
+    
+    
+    <p>CafeLatte<br>4500won</p>
+    <img 
+    width="150px"
+    src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfmSN5Q5YlTFSoa-nJKo2JiaO1DsIQMyyZQ&usqp=CAU">
+    <br>
+    <input type="number"/>
+    <select class="">
+        <option>HOT</option>
+        <option>ICE</option>
+    </select>
+    <input  type="submit" value="추가" />
+    <p style="margin-top: 50px; margin-bottom: 50px;"></p>
+    <br>
+
+
+
+    <p>LemonAde<br>5000won</p>
+    <img 
+    width="150px"
+    src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRgR8epzihOSXXvisz0bvqKuyv6QJ-lgwNpg&usqp=CAU">
+    <br>
+    <input type="number"/>
+    <select class="">
+        <option>ICE</option>
+    </select>
+    <input type="submit" value="추가" />
+    <br>    
+ 
+    <select name ="producktName">
+        <option>아메리카노</option>
+        <option>카페라떼</option>
+        <option>레몬에이드</option>
+    </select> <input type="submit" value="추가"/>
+</form>
+<br>
+
+<a href="checkOut.html">선택목록 보기</a>
+<br>
+</div>
+</body>
+<script src="WPS_server.js"></script>
+</html>
