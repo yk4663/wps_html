@@ -20,8 +20,17 @@
     
     <h1> -MENU- </h1>
     
-    <script> session.getAttribute("username") </script>님 환영합니다!
-     
+    
+    <script> session.getAttributeById("username") </script>님 환영합니다!
+    
+    <script>
+    const receivedData = location.href.split('username')[1];
+        console.log(receivedData); // data
+        
+        // 전달받은 데이터가 한글일 경우
+        console.log(decodeURI(receivedData));
+    </script> 
+    
     <div>
     
     <form name ="selProductFrom" method="post" action="add.html">
@@ -68,11 +77,6 @@
     <input type="submit" value="추가" />
     <br>    
  
-    <select name ="producktName">
-        <option>아메리카노</option>
-        <option>카페라떼</option>
-        <option>레몬에이드</option>
-    </select> <input type="submit" value="추가"/>
 </form>
 <br>
 
@@ -80,5 +84,5 @@
 <br>
 </div>
 </body>
-<script src="WPS_server.js"></script>
+<script src="app.js"></script>
 </html>
